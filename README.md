@@ -27,8 +27,8 @@ The above test results in write failures once the failover is initiated and it n
 
 Results:
 
-The above test results in write failures once the failover is initiated and eventuaally will recover once the failover is complete.
+The above test results in write failures once the failover is initiated and eventually will recover once the failover is complete.
 
 ## Conclusion:
 
-The addition of replicaSet=globaldb in the connection string causes writes to indefintely fail in the event of a failover. If this were in the context of a server, this would mean the server would have to be restarted in order for writes to resume. Removing replicaSet=globaldb from the connection string makes that mongo client behave as expected, and writes recover after the failover is complete.
+The addition of replicaSet=globaldb in the connection string causes writes to indefintely fail in the event of a failover. If this were in the context of a server, this would mean the server would have to be restarted in order for writes to resume. Removing replicaSet=globaldb from the connection string makes that mongo client behave as expected, and writes recover automatically after the failover is complete.
