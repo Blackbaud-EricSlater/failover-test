@@ -8,7 +8,7 @@ This project is meant to demonstrate a failover issue with Cosmos DB using mongo
 
 1. Provision a cosmos db instance using the mongo Api on version 3.2. Ensure Geo-Redundancy is enabled.
 2. Edit the file FailoverTest.java and update the value of the connection string variable to use your instances connection string.
-3. Run FailoverTest.java and ensure the reads and writes are succeeding. You should see output like this if reads and writes are succeeding...
+3. Run FailoverTest.java and ensure the reads and writes are succeeding. You should see output like this if reads and writes are succeeding...  
 `
 Read document: {"_id": {"$oid": "5ef11cafb7f5590927350f33"}, "id": "wQMdgUpUbH", "pk": "pk", "key": "someValue"}
 Update Result: [AcknowledgedUpdateResult{matchedCount=1, modifiedCount=1, upsertedId=null}]
