@@ -11,6 +11,8 @@ This project is meant to demonstrate a failover issue with Cosmos DB using mongo
 3. Run FailoverTest.java and ensure the reads and writes are succeeding. The easiset way to run it is with `./gradlew run`. You should see output like this if reads and writes are succeeding...  
 `
 Read document: {"_id": {"$oid": "5ef11cafb7f5590927350f33"}, "id": "wQMdgUpUbH", "pk": "pk", "key": "someValue"}
+`  
+`
 Update Result: [AcknowledgedUpdateResult{matchedCount=1, modifiedCount=1, upsertedId=null}]
 `
 4. Go to the Azure portal for your database instance, click the Replicate data globally tab.
